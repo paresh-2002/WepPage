@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <title>LandKit</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -61,7 +62,7 @@
     </section>
     <section class="max-content">
       <div class="container">
-        <div class="main-wrapper">
+        <div class="contain-wrapper">
           <div class="content">
             <div class="content-icon">
               <i class="fa-solid fa-sliders"></i>
@@ -120,7 +121,7 @@
     </section>
     <section class="cart-container">
       <div class="container">
-        <div class="main-cart-wrapper">
+        <div class="main-cart-wrapper-top">
           <div class="cart-left">
             <img src="./images/cart_image.avif" alt="" width="500px">
             <div class="card-body">
@@ -170,14 +171,13 @@
             </div>
           </div>
         </div>
-
-        <div class="main-cart-wrapper">
+        <div class="main-cart-wrapper-bottom">
           <div class="bottom-left">
             <h2>We have lots of experience <span>building Bootstrap themes.</span></h2>
             <p>We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.</p>
             <div class="contain-all">
               <div class="contain-left">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-arrows-turn-to-dots"></i>
                 <div class="contain-all-icon">
                   <h4>Bootstrap users since the beginning</h4>
                   <p>We've been developing with Bootstrap since it was publicly released in 2011.</p>
@@ -199,7 +199,76 @@
         </div>
       </div>
     </section>
+    <section class="slid-container">
+      <div class="container">
+        <div class="slider-container">
+          <div class="slider-wrapper-top">
+            <h2>Our customers are our biggest fans.</h2>
+            <p>We don't like to brag, but we don't mind letting our customers do it for us.
+              Here are a few nice things folks have said about our themes over the years.</p>
+          </div>
+          <div class="slider-wrapper-bottom">
+            <div class="slider-left">
+              <img src="./images/team_work2.jpg" alt="team_work">
+            </div>
+            <div class="slider-right">
+              <img src="./images/airbnb-ar21.svg" alt="airbnb logo" />
+              <p>
+                “Landkit is hands down the most useful front end Bootstrap theme I've ever used. I can't wait to
+                use
+                it
+                again for my next project.”
+              </p>
+              <p><span>Dave Gamache</span></p>
+            </div>
 
+            <button class="left-arrow">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+            </button>
+            <button class="right-arrow">
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="cart-container">
+      <div class="container">
+        <div class="main-cart-wrapper-bottom">
+          <div class="bottom-left">
+            <h2>Stay focused on your business. <span>Let us handle the design.</span></h2>
+            <p>You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your
+              components up to date. Let us do that for you.</p>
+            <div class="">
+              <div class="contain-left">
+                <h3>
+                  100%
+                </h3>
+                <p>Satisfaction</p>
+              </div>
+              <div class="contain-left">
+                <h3>24/7
+                </h3>
+                <p>
+                  Support</p>
+              </div>
+              <div class="contain-left">
+                <h3>
+                  100k+
+                </h3>
+                <p>Sales</p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="bottom-right">
+            <img src="./images/section-6.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container">
