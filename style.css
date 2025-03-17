@@ -161,6 +161,7 @@ img {
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .main-wrapper .left-wrapper .hero-btn .left-btn {
@@ -450,7 +451,7 @@ img {
 }
 
 .main-cart-wrapper-bottom .bottom-right img{
- transform: rotateY(-45deg) rotateX(45deg);
+ transform: rotateY(-45deg) rotateX(15deg);
 }
 
 /* bottom */
