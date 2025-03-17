@@ -448,10 +448,12 @@ img {
 .main-cart-wrapper-bottom .bottom-right {
   width: 50%;
   padding: 0 20px;
+  perspective: 1500px;
 }
 
 .main-cart-wrapper-bottom .bottom-right img{
- transform: rotateY(-45deg) rotateX(15deg);
+  transform: rotateY(-35deg) rotateX(15deg) rotateZ(3deg);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 /* bottom */
