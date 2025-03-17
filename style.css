@@ -973,6 +973,7 @@ img {
   padding-right: 10px;
   font-size: 17px;
   color: #9b9da1;
+  cursor: pointer;
 }
 
 .footer-list-logo p {
