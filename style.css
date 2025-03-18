@@ -603,7 +603,9 @@ img {
     padding-top: 20px;
   }
 
-
+  .main-cart-wrapper-top .cart-right h2{
+    font-size: 20px;
+  }
 
   .cart-container .main-cart-wrapper-top .cart-left {
     width: 100%;
@@ -643,7 +645,7 @@ img {
   }
 
   .main-cart-wrapper-bottom .bottom-left h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .cart-container .main-cart-wrapper-bottom .bottom-left {
@@ -923,7 +925,7 @@ img {
   }
 
   .main-cart-wrapper .bottom-left h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
 }
@@ -1135,9 +1137,6 @@ img {
     margin: 0;
   }
 
-  .main-cart-wrapper .bottom-left h2 {
-    font-size: 24px;
-  }
 
 }
 
