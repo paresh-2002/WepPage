@@ -182,7 +182,7 @@ img {
 }
 
 .main-wrapper .left-wrapper p {
-  font-size: 21px;
+  font-size: 17px;
   color: #7c8097ad;
   margin-bottom: 48px;
 }
@@ -217,6 +217,12 @@ img {
 .main-wrapper .right-wrapper {
   width: 50%;
   padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+  .main-wrapper .left-wrapper h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -361,7 +367,6 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -422,7 +427,8 @@ img {
 }
 
 .main-cart-wrapper-top .cart-left img {
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .cart-left:hover {
@@ -507,7 +513,6 @@ img {
 .main-cart-wrapper-top .cart-right .contain-all {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .main-cart-wrapper-top .cart-right .contain-all-icon {
@@ -593,6 +598,23 @@ img {
 
 /* bottom */
 
+@media(max-width:991px) {
+  .main-cart-wrapper-top .cart-right h2 {
+    font-size: 24px;
+  }
+  .main-cart-wrapper-top .cart-right .contain-all {
+    flex-direction: column;
+  }
+  .main-cart-wrapper-bottom .bottom-left h2{
+    font-size: 24px;
+  }
+  .main-cart-wrapper-bottom .bottom-left p{
+    font-size: 15px;
+  }
+  .main-cart-wrapper-bottom .bottom-left .contain-all .contain-left .contain-all-icon h4 {
+    font-size: 16px;
+  }
+}
 
 @media (max-width: 767px) {
   .cart-container .main-cart-wrapper-top {
@@ -621,7 +643,7 @@ img {
   .cart-container .main-cart-wrapper-top .cart-right {
     width: 100%;
     max-width: 100%;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
   }
 
   .cart-container .main-cart-wrapper-top .cart-right .contain-all {
@@ -642,6 +664,7 @@ img {
 
   .cart-container .main-cart-wrapper-bottom .bottom-right {
     width: 100%;
+    padding: 0;
   }
 
   .main-cart-wrapper-bottom .bottom-left h2 {
@@ -651,7 +674,8 @@ img {
   .cart-container .main-cart-wrapper-bottom .bottom-left {
     width: 100%;
     max-width: 100%;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
+    padding: 0;
   }
 
   .cart-container .main-cart-wrapper-bottom .bottom-left .contain-all {
@@ -662,6 +686,7 @@ img {
   }
 
 }
+
 
 @media(max-width:475px) {
   .cart-container .main-cart-wrapper-bottom .bottom-left h2 {
@@ -733,11 +758,11 @@ img {
 .slider-wrapper-bottom .slider-right {
   width: 50%;
   padding: 0 20px;
-  
+
 }
 
 .slider-wrapper-bottom .slider-right p {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 40px;
   color: #161c2d;
   line-height: 1.5;
@@ -786,13 +811,19 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 991px) {
+  .slider-wrapper-bottom .slider-right p{
+    font-size: 14px;
+  }
+
+}
 @media (max-width: 767px) {
 
   .slider-container .slider-wrapper-top {
     width: 100%;
   }
-  
- 
+
+
   .slider-container .slider-wrapper-top h2 {
     font-size: 24px;
   }
@@ -829,6 +860,7 @@ img {
   }
 
 }
+
 /* section5 */
 
 /* section6 */
@@ -868,7 +900,7 @@ img {
 
 .main-cart-wrapper .bottom-left P {
   color: #869ab8;
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 38px;
 }
 
@@ -905,6 +937,12 @@ img {
   padding: 0 20px;
 }
 
+@media(max-width:991px) {
+  .main-cart-wrapper .bottom-left h2{
+    font-size: 23px;
+  }
+}
+
 @media (max-width: 767px) {
 
   .main-cart-container .main-cart-wrapper {
@@ -916,11 +954,13 @@ img {
     max-width: 100%;
     margin-top: 10px;
     order: 2;
+    padding: 0;
   }
 
   .main-cart-container .main-cart-wrapper .bottom-right {
     width: 100%;
     margin-bottom: 20px;
+    padding: 0;
   }
 
   .main-cart-wrapper .bottom-left h2 {
@@ -947,8 +987,9 @@ img {
 }
 
 .option-container .option-wrapper-top {
-  width: 60%;
+  width: 100%;
   text-align: center;
+  padding: 0 200px;
 }
 
 .option-container .option-wrapper-top h2 {
@@ -1114,6 +1155,7 @@ img {
   .option-container .option-wrapper-top {
     width: 100%;
     margin-top: 10px;
+    padding: 0;
   }
 
   .option-container .container .option-wrapper-bottom {
@@ -1196,6 +1238,10 @@ img {
 }
 
 @media (max-width: 767px) {
+  .faq-contain-wrapper {
+    padding: 0;
+  }
+
   .faq-main-content .contain-wrapper {
     flex-direction: column;
   }
