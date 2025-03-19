@@ -25,19 +25,21 @@
         <a href="">
           <img src="./images/brand.svg" alt="" />
         </a>
-        <button class="navbar-toggler">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="header-menu">
+        <div class="navbar-toggler">
+          <button class="navbar-toggler-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="header-menu" id="navMenu">
           <ul>
             <li>Landings</li>
             <li>Pages</li>
             <li>Account</li>
             <li>Documentation</li>
           </ul>
-        </div>
-        <div class="header-btn">
-          <button>Buy Now</button>
+          <div class="header-btn">
+            <button>Buy Now</button>
+          </div>
         </div>
       </div>
     </div>
@@ -488,6 +490,26 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    document.querySelector(".navbar-toggler-btn").addEventListener("click", function () {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.toggle("active");
+
+      // Toggle hamburger icon between bars and X
+      const hamburgerIcon = this.querySelector("i");
+      if (hamburgerIcon.classList.contains("fa-bars")) {
+        hamburgerIcon.classList.remove("fa-bars");
+        hamburgerIcon.classList.add("fa-xmark");
+      } else {
+        hamburgerIcon.classList.remove("fa-xmark");
+        hamburgerIcon.classList.add("fa-bars");
+      }
+    });
+
+
+  </script>
 </body>
 
 </html>

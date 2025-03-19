@@ -104,6 +104,13 @@ img {
   padding: 20px;
 }
 
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .header-menu ul {
   display: flex;
   justify-content: center;
@@ -129,7 +136,7 @@ img {
   cursor: pointer;
 }
 
-.header .navbar-toggler {
+.header .navbar-toggler .navbar-toggler-btn {
   display: none;
   border: none;
   cursor: pointer;
@@ -138,19 +145,46 @@ img {
   background-color: transparent;
 }
 
+.header .navbar-toggler .navbar-toggler-cross-btn {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  color: #506690;
+  background-color: transparent;
+}
 
 @media (max-width: 991px) {
-  .header .navbar-toggler {
+  .header a img {
+    width: 150px;
+  }
+
+  .header .navbar-toggler .navbar-toggler-btn {
     display: block;
+    margin-left: auto;
   }
 
-  .header-menu {
-    display: none;
+  .header-menu ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 20px 0;
   }
 
-  .header-btn {
+  .header-menu ul li {
+    font-size: 25px;
+  }
+
+  .header-menu{
+    width: 100%;
     display: none;
   }
+  .header-menu.active {
+    width: 100%;
+    display: block;
+
+  }
+
 }
 
 /*Header */
@@ -602,15 +636,19 @@ img {
   .main-cart-wrapper-top .cart-right h2 {
     font-size: 24px;
   }
+
   .main-cart-wrapper-top .cart-right .contain-all {
     flex-direction: column;
   }
-  .main-cart-wrapper-bottom .bottom-left h2{
+
+  .main-cart-wrapper-bottom .bottom-left h2 {
     font-size: 24px;
   }
-  .main-cart-wrapper-bottom .bottom-left p{
+
+  .main-cart-wrapper-bottom .bottom-left p {
     font-size: 15px;
   }
+
   .main-cart-wrapper-bottom .bottom-left .contain-all .contain-left .contain-all-icon h4 {
     font-size: 16px;
   }
@@ -812,11 +850,12 @@ img {
 }
 
 @media (max-width: 991px) {
-  .slider-wrapper-bottom .slider-right p{
+  .slider-wrapper-bottom .slider-right p {
     font-size: 14px;
   }
 
 }
+
 @media (max-width: 767px) {
 
   .slider-container .slider-wrapper-top {
@@ -938,7 +977,7 @@ img {
 }
 
 @media(max-width:991px) {
-  .main-cart-wrapper .bottom-left h2{
+  .main-cart-wrapper .bottom-left h2 {
     font-size: 23px;
   }
 }
