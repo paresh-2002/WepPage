@@ -44,11 +44,6 @@ body {
   font-optical-sizing: auto;
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
 ul,
 a {
   list-style: none;
